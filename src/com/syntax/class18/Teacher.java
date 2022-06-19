@@ -6,14 +6,27 @@ public class Teacher {
    void teachs(){
         System.out.println(name+" Starts teaching "+subject);
     }
+
 }
 class MathTeacher extends Teacher{
+
+
     MathTeacher(String name,String subject) {
         this.name=name;
         this.subject=subject;
 
+
     }
 
+    public void teachsMath(){
+        System.out.println(name+" Starts teaching "+subject);
+    }
+
+    void teachs(){
+
+
+        super.teachs();
+    }
     }
 
 class ChemistryTeacher extends Teacher{
@@ -29,8 +42,9 @@ class PianoTeacher extends Teacher{
     PianoTeacher(String name,String subject) {
         this.name=name;
         this.subject=subject;
-
+        System.out.println(super.name);
     }
+
 }
 class Tester{
     public static void main(String[] args) {
@@ -38,7 +52,10 @@ class Tester{
         ChemistryTeacher m2=new ChemistryTeacher("Lulu","Chemistry");
         PianoTeacher m3=new PianoTeacher("Bobo","Piano");
         m1.teachs();
+
         m2.teachs();
         m3.teachs();
+        m1.teachsMath();
+
     }
 }
