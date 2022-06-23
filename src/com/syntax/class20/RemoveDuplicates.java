@@ -44,16 +44,6 @@ arr=removeDuplicates(arr);
         return false;
 
     }
-    static boolean isZero(int element, int[] arr) {
-        for (int e : arr) {
-            if (element == e) {
-                return true;
-            }
 
-
-        }
-        return false;
-
-    }
 }
 

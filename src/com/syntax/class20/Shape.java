@@ -10,7 +10,7 @@ public class Shape {
 
     }
    public  double area(){
-        area=3.14*(this.raidus^2);
+        area=Math.PI*Math.pow(raidus,2);
         return area;
     }
 }
