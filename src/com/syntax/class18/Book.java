@@ -12,6 +12,7 @@ package com.syntax.class18;
             this.name=name;
             this.pages=pages;
             System.out.println("Show name and pages "+name+" "+pages);
+           System.out.println();
         }
     }
 
