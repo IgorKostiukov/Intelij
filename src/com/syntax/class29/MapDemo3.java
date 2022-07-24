@@ -22,5 +22,6 @@ public class MapDemo3 {
         for(Map.Entry<String,Double> j:entries){
             System.out.println(j);
         }
+        fruit.forEach((keys,value)-> System.out.println(keys+value)); //lambda expression
     }
 }

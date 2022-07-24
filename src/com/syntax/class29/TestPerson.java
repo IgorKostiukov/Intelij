@@ -21,6 +21,7 @@ public class TestPerson  extends Person{
         for(Person t:person.values())
         {
             t.details();
+
         }
 
         }
